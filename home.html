@@ -5,7 +5,6 @@
   <title>The Mom's Kitchen - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Reset styles */
     body, html {
       margin: 0;
       padding: 0;
@@ -51,12 +50,12 @@
     .brand {
       position: absolute;
       top: 20px;
-      left: 30px;
+      left: 20px;
       color: #ff6b35;
-      font-size: 1.8em;
+      font-size: 1.5em;
       font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
       z-index: 1;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
 
     /* Content container */
@@ -67,27 +66,50 @@
       transform: translate(-50%, -50%);
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
+      width: 90%;
+      max-width: 400px;
     }
 
-    p {
-      font-size: 1.2em;
+    .content p {
+      font-size: 1.1em;
       margin-bottom: 20px;
+      line-height: 1.4;
     }
 
     .button {
       display: inline-block;
       background: #ff6b35;
       color: white;
-      padding: 12px 24px;
+      padding: 14px 24px;
       text-decoration: none;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1.1em;
       transition: background 0.3s;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .button:hover {
       background: #e85c28;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .brand {
+        font-size: 1.2em;
+        top: 15px;
+        left: 15px;
+      }
+
+      .content p {
+        font-size: 1em;
+      }
+
+      .button {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
     }
   </style>
 </head>
