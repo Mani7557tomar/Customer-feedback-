@@ -2,71 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Corporate Bites - Login</title>
+  <title>The Mom's Kitchen - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: Arial, sans-serif;
       background: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
       padding: 20px;
     }
-    form {
+
+    .login-box {
       background: white;
-      max-width: 400px;
-      margin: auto;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-      color: #ff6b35;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input {
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+      max-width: 400px;
+      text-align: center;
     }
-    button {
+
+    .login-box h1 {
+      color: #ff6b35;
+      margin-bottom: 20px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+
+    .login-box button {
       background: #ff6b35;
       color: white;
-      padding: 10px;
+      padding: 12px;
       border: none;
       border-radius: 5px;
-      margin-top: 15px;
       width: 100%;
+      font-size: 1.1em;
       cursor: pointer;
+      transition: background 0.3s;
     }
-    .link {
-      text-align: center;
-      margin-top: 10px;
+
+    .login-box button:hover {
+      background: #e85c28;
+    }
+
+    .login-box p {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    .login-box a {
+      color: #ff6b35;
+      text-decoration: none;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <form id="loginForm">
-    <h2>Login</h2>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Login</button>
-    <div class="link">
-      Don't have an account? <a href="register.html">Register here</a>
+  <div class="container">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="home.html" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don’t have an account? <a href="#">Register</a></p>
     </div>
-  </form>
-
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      // For now, always successful
-      window.location.href = "home.html";
-    });
-  </script>
+  </div>
 </body>
 </html>
