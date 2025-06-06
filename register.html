@@ -12,7 +12,6 @@
       font-family: Arial, sans-serif;
       background: #f9f9f9;
     }
-
     .container {
       display: flex;
       justify-content: center;
@@ -20,7 +19,6 @@
       height: 100%;
       padding: 20px;
     }
-
     .register-box {
       background: white;
       padding: 30px;
@@ -30,16 +28,14 @@
       max-width: 400px;
       text-align: center;
     }
-
     .register-box h1 {
       color: #ff6b35;
       margin-bottom: 20px;
     }
-
     .register-box input[type="text"],
-    .register-box input[type="password"],
+    .register-box input[type="tel"],
     .register-box input[type="email"],
-    .register-box input[type="tel"] {
+    .register-box input[type="password"] {
       width: 100%;
       padding: 12px;
       margin: 10px 0;
@@ -48,7 +44,6 @@
       font-size: 1em;
       box-sizing: border-box;
     }
-
     .register-box button {
       background: #ff6b35;
       color: white;
@@ -60,21 +55,17 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-
     .register-box button:hover {
       background: #e85c28;
     }
-
     .register-box p {
       margin-top: 15px;
       font-size: 0.9em;
     }
-
     .register-box a {
       color: #ff6b35;
       text-decoration: none;
     }
-
     .register-box a:hover {
       text-decoration: underline;
     }
@@ -94,12 +85,11 @@
       <p>Already have an account? <a href="login.html">Login</a></p>
     </div>
   </div>
-  
   <script>
-    document.getElementById("registerForm").addEventListener("submit", function(event){
-      event.preventDefault(); // Prevent the form from submitting traditionally
-      // Here you could add validation or saving data (e.g., localStorage) if needed
-      window.location.href = "home.html"; // Redirect to home page after successful registration
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // For now, just redirect to home page
+      window.location.href = "home.html";
     });
   </script>
 </body>
