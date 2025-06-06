@@ -12,7 +12,6 @@
       font-family: Arial, sans-serif;
       background: #f9f9f9;
     }
-
     .container {
       display: flex;
       justify-content: center;
@@ -20,7 +19,6 @@
       height: 100%;
       padding: 20px;
     }
-
     .login-box {
       background: white;
       padding: 30px;
@@ -30,12 +28,10 @@
       max-width: 400px;
       text-align: center;
     }
-
     .login-box h1 {
       color: #ff6b35;
       margin-bottom: 20px;
     }
-
     .login-box input[type="text"],
     .login-box input[type="password"] {
       width: 100%;
@@ -46,7 +42,6 @@
       font-size: 1em;
       box-sizing: border-box;
     }
-
     .login-box button {
       background: #ff6b35;
       color: white;
@@ -58,21 +53,17 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-
     .login-box button:hover {
       background: #e85c28;
     }
-
     .login-box p {
       margin-top: 15px;
       font-size: 0.9em;
     }
-
     .login-box a {
       color: #ff6b35;
       text-decoration: none;
     }
-
     .login-box a:hover {
       text-decoration: underline;
     }
@@ -90,12 +81,11 @@
       <p>Don’t have an account? <a href="register.html">Register</a></p>
     </div>
   </div>
-  
   <script>
-    document.getElementById("loginForm").addEventListener("submit", function(event){
-      event.preventDefault(); // Prevent the form from submitting traditionally
-      // Here you could add validation or authentication logic
-      window.location.href = "home.html"; // Redirect to home page after login
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // For now, just redirect to home page
+      window.location.href = "home.html";
     });
   </script>
 </body>
