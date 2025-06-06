@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Corporate Bites - Home</title>
+  <title>The Mom's Kitchen - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Reset styles */
@@ -25,7 +25,6 @@
       z-index: -1;
     }
 
-    /* Video element */
     .video-container video {
       position: absolute;
       top: 50%;
@@ -48,6 +47,18 @@
       background: rgba(0, 0, 0, 0.5);
     }
 
+    /* Brand name container */
+    .brand {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      color: #ff6b35;
+      font-size: 1.8em;
+      font-weight: bold;
+      z-index: 1;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+
     /* Content container */
     .content {
       position: absolute;
@@ -59,24 +70,13 @@
       padding: 20px;
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: hai 0.5px;
-      color: #ff6b35;
-    }
-
     p {
       font-size: 1.2em;
-      margin-bottom: 2px;
+      margin-bottom: 20px;
     }
 
-    .button-container {
-      margin-top: 20px;
-    }
-
-    a.button {
+    .button {
       display: inline-block;
-      margin: 0 50px;
       background: #ff6b35;
       color: white;
       padding: 12px 24px;
@@ -86,7 +86,7 @@
       transition: background 0.3s;
     }
 
-    a.button:hover {
+    .button:hover {
       background: #e85c28;
     }
   </style>
@@ -100,13 +100,11 @@
     <div class="overlay"></div>
   </div>
 
+  <div class="brand">The Mom's Kitchen</div>
+
   <div class="content">
-    <h1>The Mom's Kitchen!</h1>
     <p>Enjoy your meals and share your feedback with us.</p>
-    <div class="button-container">
-      <a href="login.html" class="button">Login</a>
-      <a href="feedback.html" class="button">Leave Feedback</a>
-    </div>
+    <a href="login.html" class="button">Leave Feedback</a>
   </div>
 </body>
 </html>
