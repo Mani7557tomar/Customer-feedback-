@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Corporate Bites Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #ff6b35;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background: #ff6b35;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="POST">
+    <h2>Customer Feedback</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email (optional):</label>
+    <input type="email" id="email" name="email">
+    
+    <label for="rating">How would you rate your meal?</label>
+    <select id="rating" name="rating" required>
+      <option value="">Select Rating</option>
+      <option value="5">⭐️⭐️⭐️⭐️⭐️ Excellent</option>
+      <option value="4">⭐️⭐️⭐️⭐️ Good</option>
+      <option value="3">⭐️⭐️⭐️ Average</option>
+      <option value="2">⭐️⭐️ Below Average</option>
+      <option value="1">⭐️ Poor</option>
+    </select>
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="4"></textarea>
+    
+    <button type="submit">Submit Feedback</button>
+  </form>
+</body>
+</html>
