@@ -5,128 +5,36 @@
   <title>The Mom's Kitchen - Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    body {
       font-family: Arial, sans-serif;
-      overflow: hidden;
+      background: #fff5e1;
+      margin: 0;
+      padding: 20px;
     }
-
-    /* Video background container */
-    .video-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
-
-    .video-container video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-
-    /* Dark overlay */
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    /* Brand name container */
-    .brand {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      color: #ff6b35;
-      font-size: 1.5em;
-      font-weight: bold;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-      z-index: 1;
-    }
-
-    /* Content container */
-    .content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+    h1 {
       text-align: center;
-      padding: 10px;
-      width: 90%;
-      max-width: 400px;
+      color: #ff6b35;
     }
-
-    .content p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      line-height: 2.4;
-    }
-
     .button {
-      display: inline-block;
+      display: block;
+      width: 200px;
+      margin: 30px auto;
       background: #ff6b35;
       color: white;
-      padding: 14px 24px;
-      text-decoration: none;
+      padding: 15px;
+      text-align: center;
       border-radius: 5px;
-      font-size: 1.1em;
+      text-decoration: none;
+      font-size: 1.2em;
       transition: background 0.3s;
-      width: 100%;
-      box-sizing: border-box;
     }
-
     .button:hover {
       background: #e85c28;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 480px) {
-      .brand {
-        font-size: 1.2em;
-        top: 15px;
-        left: 15px;
-      }
-
-      .content p {
-        font-size: 1em;
-      }
-
-      .button {
-        padding: 12px 20px;
-        font-size: 1em;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="video-container">
-    <video autoplay muted loop playsinline>
-      <source src="Assets/2894881-uhd_3840_2160_24fps (1).mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
-  </div>
-
-  <div class="brand">The Mom's Kitchen</div>
-
-  <div class="content">
-    <p>Enjoy your meals and share your feedback with us.</p>
-    <a href="login.html" class="button">Leave Feedback</a>
-  </div>
+  <h1>Welcome to The Mom's Kitchen!</h1>
+  <a href="feedback.html" class="button">Leave Feedback</a>
 </body>
 </html>
